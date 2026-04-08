@@ -1,0 +1,25 @@
+.contenedor{
+    display: grid;
+    place-items: center;
+    /* grid-template-columns: repeat(3, 1fr); */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 25px;
+}
+
+img{
+    /* width: 300px; */
+    /* height: 300px; */
+    border: 2px solid gray;
+    border-radius: 10px;
+    box-shadow: 0 0 0 3px lightseagreen;
+    transition: transform 0.3s ease;
+    opacity: 1;;
+}
+
+img:hover{
+    transform: scale(1.05);
+    opacity: 0.8;
+    
+}
+   
