@@ -1,0 +1,95 @@
+body{    
+    background-image: linear-gradient(90deg, lightblue, lightgray, lightgreen);
+    animation: animarfondo 5s ease infinite; 
+    min-height: 100vh;
+    background-attachment: fixed;
+    margin: 0; 
+    background-size: 200% 200%;
+}
+
+@keyframes animarfondo{
+    0%{background-position: 0% 25%;}
+    50%{background-position: 100% 50%;}
+    100%{background-position: 0% 25%;}
+}
+
+h1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: navy;
+    text-align: center;
+    padding: 10px;
+}
+
+.formulario{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(142, 201, 201);
+    padding: 20px;
+    max-width: 400px;
+    margin: 0 auto;
+    border-radius: 20px;
+    gap: 5px;
+    box-shadow: 0 0 15px navy;
+}
+
+.boton{
+    cursor: pointer;
+    color: navy; 
+    border-radius: 5px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 5px;
+}
+
+.boton:hover{
+   background-color: navy; 
+   color: gold;
+}
+
+.contenedor, .marcas{
+    margin: 5px;
+    padding: 5px;
+    background-color: beige;
+    color: navy;
+    border-radius: 10px;
+    box-shadow: 0 0 10px navy;
+    text-align: left;
+}
+
+
+
+div{
+    text-align: center;
+}
+
+h3{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+a{
+    padding: 10px;
+    margin: 15px;
+    border: 2px solid navy;
+    border-radius: 10px;
+    box-shadow: 3px 3px lightseagreen;
+    transition: all 0.3s linear;    
+    text-decoration: none; /* Quita la linea subrayada a los enlaces */
+}
+
+a:link{  /*Todos los enlaces tienen este color*/
+    color: blue;
+    background-color: greenyellow;
+}
+
+a:visited{ /*Una vez que se visito el sitio toma este color*/
+    color: navy;
+}
+
+a:hover{ /*Cuando coloco el mouse encima del enlace*/
+    color: rgb(182, 126, 235);
+    background-color: black;
+}
+
+a:active{ /*Cuando doy clic al enlace con el mouse*/
+    color: grey;
+}

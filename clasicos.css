@@ -1,0 +1,98 @@
+*{box-sizing: border-box;}
+
+html{
+    scroll-behavior: smooth;
+}
+
+h1,h2{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: navy;
+    text-align: center;
+    padding: 10px;
+}
+
+.contenedor{
+    border: 0;
+}
+
+.caja1{
+    height: 80px;
+    margin-bottom: 12px;
+    padding: 15px;
+}
+
+.caja2{
+    display: grid;
+    place-items: center;
+    grid-template-rows: repeat(3, 1fr);
+    gap:25px;
+    height: 300px;
+    margin-bottom: 12px;
+    padding: 15px;
+}
+
+img{
+    width: 300px;
+    height: 200px;
+    margin: 12px;
+    border: 2px solid navy;
+    border-radius: 10px;
+    box-shadow: 3px 3px lightseagreen;
+    transition: transform 0.3s ease;
+    opacity: 1;
+}
+
+img:hover{
+    transform: scale(1.05);  
+    opacity: 0.7;
+}
+
+.caja3{
+    height: 450px;
+    margin-bottom: 12px;
+    padding: 15px;
+}
+
+.caja4{
+    height: 80px;
+    margin-bottom: 12px;
+    padding: 15px;
+}
+
+
+
+div{
+    text-align: center;
+}
+
+h3{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+a{
+    padding: 10px;
+    margin: 15px;
+    border: 2px solid navy;
+    border-radius: 10px;
+    box-shadow: 3px 3px lightseagreen;
+    transition: all 0.3s linear;    
+    text-decoration: none; /* Quita la linea subrayada a los enlaces */
+}
+
+a:link{  /*Todos los enlaces tienen este color*/
+    color: blue;
+    background-color: greenyellow;
+}
+
+a:visited{ /*Una vez que se visito el sitio toma este color*/
+    color: navy;
+}
+
+a:hover{ /*Cuando coloco el mouse encima del enlace*/
+    color: rgb(182, 126, 235);
+    background-color: black;
+}
+
+a:active{ /*Cuando doy clic al enlace con el mouse*/
+    color: grey;
+}
